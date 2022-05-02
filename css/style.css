@@ -147,6 +147,9 @@ p {
     height: 100vh;
     text-align: center;
     z-index: 1000;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 @media (max-width: 48rem) {
