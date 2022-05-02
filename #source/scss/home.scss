@@ -1,0 +1,118 @@
+.home {
+    .container_main {
+        @include df-between;
+        width: 100%;
+        @media (max-width: rem(800)) {
+                flex-wrap: wrap;
+        }
+
+        .main-left {
+            max-width: 47%;
+
+            @media (max-width: rem(1024)) {
+                padding: rem(22);
+                margin-top: rem(45);
+            }
+
+            @media (max-width: rem(800)) {
+                max-width: 100%;
+                padding: rem(22);
+            }
+
+            
+            
+            .suptitle {
+                @include f-oswald;
+                font-size: rem(56);
+                line-height: lh(66, 56);
+                text-transform: uppercase;
+                color: #000000;
+                width: 100%!important;
+
+                @media (max-width: rem(1024)) {
+                    margin-top: rem(45);
+                }
+
+                @media (max-width: rem(800)) {
+                    margin-top: rem(30);
+                }
+
+                @media (max-width: rem(600)) {
+                    margin-top: rem(0);
+                    max-width: 100%;
+                    font-size: rem(50);
+                }
+            }
+
+            .text {
+                @include f-roboto;
+                padding: rem(52) 0 rem(17);
+                font-size: rem(16);
+                line-height: lh(26, 16);
+                color: #000000;
+                width: 100%;
+            }
+
+            .wrapper {
+                display: flex;
+                align-items: center;
+
+                .left-img-block {
+                    margin-right: rem(20);
+                }
+
+                .right-content {
+                    .norton {
+                        @include f-oswald;
+                        font-size: rem(18);
+                        line-height: lh(28, 18);
+                        text-transform: uppercase;
+                        color: #000000;
+                        margin-bottom: rem(10);
+                    }
+
+                    .row_stars {
+                        .icon_star {
+                            font-size: rem(18);
+                            color: yellow;
+                        }
+                    }
+                }
+            }
+
+            .getStartBtn {
+                @include f-oswald;
+                background: #FFA332;
+                border-radius: 30px;
+                padding: rem(14) rem(40);
+                font-size: rem(14);
+                line-height: lh(24, 14);
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-top: rem(40);
+                transition: 500ms;
+                cursor: pointer;
+            }
+
+            .getStartBtn:hover {
+                background: #0057FF;
+            }
+        }
+
+        .main-right {
+            width: 50%;
+            @media (max-width: rem(800)) {
+                width: 100%;
+            }
+
+            .main_img {
+                width: 100%;
+                @media (max-width: rem(800)) {
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+}

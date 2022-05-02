@@ -1,0 +1,75 @@
+@use "sass:math";
+
+/* VARRIABLES */
+$cl_black: #000000;
+$cl_white: #ffffff;
+$cl_blue: #3879da;
+$cl_gray: #e2e2e2;
+
+/* MIXINS */
+@mixin df-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin df-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin f-oswald {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin f-roboto {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* FUNCTIONS */
+
+//Rem
+@function rem($fz) {
+  $result: math.div($fz, 16) + rem;
+  @return $result;
+}
+
+
+//Em
+@function em($fz) {
+  $result: math.div($fz, 16) + em;
+  @return $result;
+}
+
+
+//lh
+@function lh($lh, $fz) {
+  $result: math.div($lh, $fz);
+  @return $result;
+}
+
+// toEm
+@function toEm($px, $fz) {
+  $result: math.div($px, $fz) + em;
+  @return $result;
+}
+
+
+// toRem
+@function toRem($px, $fz) {
+  $result: math.div($px, $fz) + rem;
+  @return $result;
+}
+
+// adaptiv-font
+@function adaptiv-font($pcSize, $mobSize) {
+  $maxWidth: 1440;
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  @return calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}

@@ -1,0 +1,307 @@
+.form {
+    .conatiner_form {
+        @include df-between;
+
+        @media (max-width: rem(932)) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: rem(768)) {}
+
+        .left {
+            width: 46%;
+
+            @media (max-width: rem(932)) {
+                width: 49%;
+            }
+
+            @media (max-width: rem(768)) {
+                width: 95%;
+            }
+
+            .header {
+                @include f-oswald;
+                font-size: rem(40);
+                line-height: lh(50, 40);
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #000000;
+                width: 97%;
+            }
+
+            .text {
+                @include f-roboto;
+                font-size: rem(15);
+                line-height: lh(26, 15);
+                color: #000000;
+                width: 80%;
+                margin: rem(48) 0 rem(37);
+
+            }
+
+            .wrapper {
+                @include df-between;
+
+                .customer {
+                    .customer_header {
+                        @include f-oswald;
+                        font-size: rem(25);
+                        line-height: lh(36, 25);
+                        text-transform: uppercase;
+                        color: #000000;
+                        margin: rem(16) 0 rem(16)
+                    }
+
+                    .customer_text {
+                        @include f-roboto;
+                        font-size: rem(14);
+                        line-height: lh(24, 14);
+                        color: #000000;
+                        margin-bottom: rem(30px);
+                        width: 90%;
+                    }
+
+                }
+
+                .email {
+                    .email_header {
+                        @include f-oswald;
+                        font-size: rem(25);
+                        line-height: lh(36, 25);
+                        text-transform: uppercase;
+                        color: #000000;
+                        margin: rem(16) 0 rem(16)
+                    }
+
+                    .email_text {
+                        @include f-roboto;
+                        font-size: rem(14);
+                        line-height: lh(24, 14);
+                        color: #000000;
+                        margin-bottom: rem(30px);
+                        width: 90%;
+                    }
+                }
+            }
+
+            .btn {
+                background: #0057FF;
+                border-radius: 30px;
+                @include f-oswald;
+                font-size: rem(13);
+                line-height: lh(24, 13);
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding: rem(14) rem(40);
+                margin-top: rem(30);
+
+                @media (max-width: rem(768)) {
+                    margin-bottom: rem(40);
+                }
+            }
+        }
+
+        .form-right {
+            width: 46%;
+            background: #FFFFFF;
+            box-shadow: 0px 8px 28px rgba(83, 83, 83, 0.15);
+            border-radius: 15px;
+
+            @media (max-width: rem(932)) {
+                width: 49%;
+            }
+
+            
+
+            @media (max-width: rem(768)) {
+                width: 95%;
+            }
+
+
+            .form-right_img-block {
+                width: 100%;
+
+                .form-right_img {
+                    width: 100%;
+                }
+            }
+
+            .wrap {
+                padding: rem(40);
+
+                @media (max-width: rem(932)) {
+                    padding: rem(30);
+                }
+
+                .form-right_header {
+                    @include f-oswald;
+                    font-size: rem(29);
+                    line-height: lh(40, 19);
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+
+                .form-right_text {
+                    @include f-roboto;
+                    font-size: rem(16);
+                    line-height: lh(26, 16);
+                    text-align: center;
+                    color: #000000;
+                    width: 84%;
+                    margin-bottom: rem(30);
+                }
+
+                .form {
+                    // padding: rem(40);
+                    position: relative;
+                    z-index: 5;
+
+
+                    .form_green-img {
+                        position: absolute;
+                        bottom: rem(98);
+                        right: rem(-60);
+                        z-index: 5;
+                        width: 37%;
+
+                        @media (max-width: rem(932)) {
+                            display: none;
+                        }
+                    }
+
+
+                    .name_Email_wrapper {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        column-gap: 25px;
+
+                        @media (max-width: rem(565)) {
+                            flex-wrap: wrap;
+                        }
+
+                        .name_input {
+                            background: #F8F8F8;
+                            border: 1px solid #E7E7E7;
+                            box-sizing: border-box;
+                            border-radius: 6px;
+                            font-size: rem(15);
+                            line-height: lh(60, 15);
+                            text-align: start;
+                            color: #000000;
+                            width: 50%;
+                            padding-left: 20px;
+
+                            
+                            @media (max-width: rem(565)) {
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+
+                        .name_input::placeholder {
+                            color: #000000;
+                            // padding-left: rem(26);
+
+                        }
+
+                        .email_input {
+                            background: #F8F8F8;
+                            border: 1px solid #E7E7E7;
+                            box-sizing: border-box;
+                            border-radius: 6px;
+                            font-size: rem(15);
+                            // line-height: lh(60, 15);
+                            text-align: start;
+                            color: #000000;
+                            width: 50%;
+                            padding-left: 20px;
+
+                            @media (max-width: rem(565)) {
+                                width: 100%;
+                                display: block;
+                                padding: 20px;
+                                margin-top: rem(30);
+                            }
+                        }
+
+                        .email_input::placeholder {
+                            color: #000000;
+                            // padding-left: 20px;
+
+                            @media (max-width: rem(565)) {
+                                // padding: 20px;
+                            }
+                        }
+                    }
+
+                    .subject_area_wrapper {
+                        .subject {
+                            background: #F8F8F8;
+                            border: 1px solid #E7E7E7;
+                            box-sizing: border-box;
+                            border-radius: 6px;
+                            font-size: rem(15);
+                            line-height: lh(60, 15);
+                            text-align: start;
+                            color: #000000;
+                            width: 100%;
+                            margin: rem(32) 0;
+                            padding-left: 20px;
+
+                        }
+
+                        .subject::placeholder {
+                            color: #000000;
+                            // padding: 20px;
+
+                            @media (max-width: rem(932)) {
+                                // padding-left: rem(15);
+                            }
+                        }
+
+
+                        .textarea {
+                            background: #F8F8F8;
+                            border: 1px solid #E7E7E7;
+                            box-sizing: border-box;
+                            border-radius: 6px;
+                            font-size: rem(15);
+                            line-height: lh(60, 15);
+                            color: #000000;
+                            width: 100%;
+                            height: rem(140);
+                            padding-left: 20px;
+                        }
+
+                        .textarea::placeholder {
+                            color: #000000;
+                            // padding-left: rem(26);
+
+                            @media (max-width: rem(932)) {
+                                padding-left: rem(15);
+                            }
+                        }
+
+                    }
+
+                    .form-right_btn {
+                        background: #0057FF;
+                        border-radius: 30px;
+                        @include f-roboto;
+                        font-size: rem(15);
+                        line-height: lh(60, 15);
+                        text-align: center;
+                        color: #FFFFFF;
+                        width: 100%;
+                        margin: rem(42) 0 rem(11);
+                    }
+                }
+            }
+
+
+        }
+    }
+}

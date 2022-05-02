@@ -1,0 +1,85 @@
+.trust {
+    margin-top: rem(245);
+
+    .trust-container {
+        @include df-between;
+        column-gap: rem(120);
+
+        @media (max-width: rem(800)) {
+            flex-wrap: wrap;
+        }
+
+        .left {
+            width: 46%;
+
+            @media (max-width: rem(800)) {
+                width: 95%;
+            }
+
+            .left_img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            width: 41%;
+
+            @media (max-width: rem(800)) {
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                width: 95%;
+            }
+
+            .trust_header {
+                @include f-oswald;
+                font-size: rem(40);
+                line-height: lh(50, 40);
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #000000;
+                width: 100%;
+            }
+
+            .trust_parag {
+                @include f-roboto;
+                font-size: rem(15);
+                line-height: lh(26, 15);
+                color: #000000;
+                margin: rem(48) 0 rem(58);
+            }
+
+            .trust_wrapper {
+                border: 1px solid #E7E7E7;
+                box-sizing: border-box;
+                border-radius: 20px;
+
+                .wrap_list {
+                    @include df-between;
+
+                    .wrap_text {
+                        @include f-oswald;
+                        font-size: rem(16);
+                        line-height: lh(28, 16);
+                        text-transform: uppercase;
+                        color: #000000;
+                        padding: rem(30) rem(40);
+                    }
+
+                    .wrap_img {
+                        padding: rem(43) rem(35);
+                        transition: 500ms;
+                    }
+                }
+
+                .wrap_list:hover {
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+
+                .wrap_list:hover .wrap_img {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}

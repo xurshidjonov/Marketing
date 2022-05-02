@@ -1,0 +1,80 @@
+.footer {
+    background: #000000;
+    @include df-between;
+    padding: rem(61) rem(120) rem(41);
+
+    @media (max-width: rem(850)) {
+        flex-wrap: wrap;
+    }
+    @media (max-width: rem(675)) {
+        padding: 18px;
+    }
+
+    .leftside {
+
+        @media (max-width: rem(850)) {
+            width: 100%;
+        }
+
+        .img {
+            color: #fff;
+        }
+
+        .text {
+            @include f-oswald;
+            font-size: 12px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #999999;
+            margin-top: rem(63);
+
+            @media (max-width: rem(576)) {
+                margin-top: rem(35);
+            }
+
+            .innertext {
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .rightside {
+        @media (max-width: rem(850)) {
+            width: 100%;
+        }
+
+        .menu {
+            @include df-between;
+            column-gap: rem(20);
+            margin-bottom: rem(60);
+
+            @media (max-width: rem(675)) {
+                flex-wrap: wrap;
+            }
+
+            .link {
+                @include f-oswald;
+                font-size: 12px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+
+        .soc_media {
+            width: 80%;
+            column-gap: rem(5);
+            @media (max-width: rem(576)) {
+                width: 95%;
+            }
+
+            .link {
+                border: 1px solid rgba(240, 242, 250, 0.33);
+                box-sizing: border-box;
+                border-radius: 100px;
+                padding: rem(15);
+            }
+        }
+    }
+}
