@@ -72,15 +72,14 @@ p {
 }
 @media (max-width: 48rem) {
   .header .nav {
-    width: 100%;
     padding: 0.75rem;
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .header .nav .left-block {
@@ -116,15 +115,6 @@ p {
 .header .nav .left-block .menu {
   -webkit-transition: 500ms;
   transition: 500ms;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 2.5rem;
 }
 @media (max-width: 50.625rem) {
@@ -136,6 +126,8 @@ p {
   .header .nav .left-block .menu {
     position: fixed;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: -100%;
     background-color: #000;
     -webkit-box-orient: vertical;
@@ -144,7 +136,6 @@ p {
             flex-direction: column;
     gap: 0;
     width: 100%;
-    height: 100vh;
     text-align: center;
     z-index: 1000;
   }
@@ -176,7 +167,7 @@ p {
 }
 .header .nav .right-block .btn {
   width: 100%;
-  background: #0057FF;
+  background: #0057ff;
   border-radius: 30px;
   font-family: "Oswald";
   font-style: normal;
@@ -185,7 +176,7 @@ p {
   line-height: 1.7142857143;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0.875rem 2.5rem;
   cursor: pointer;
 }

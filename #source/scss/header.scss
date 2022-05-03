@@ -1,140 +1,141 @@
 .header {
+  // background: #FFFFFF;
+  .nav {
+    padding: rem(15);
+    @include df-between;
 
-    // background: #FFFFFF;
-    .nav {
-        padding: rem(15);
-        @include df-between;
+    @media (max-width: rem(768)) {
+      //   width: 100%;
+      padding: rem(12);
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    // left
+    .left-block {
+      @include df-between;
+
+      // .logo_img-block {
+      .img_logo {
+        margin-right: rem(60);
+        animation-iteration-count: infinite;
+        cursor: pointer;
+
+        .logo_animation1 {
+          animation: pulse;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+        }
 
         @media (max-width: rem(768)) {
-            width: 100%;
-            padding: rem(12);
-            position: fixed;
-            display: flex;
-            justify-content: space-evenly;
+          margin-right: rem(40);
+        }
+      }
+
+      // }
+      .menu {
+        transition: 500ms;
+        // @include df-between;
+
+        gap: rem(40);
+
+        @media (max-width: rem(810)) {
+          gap: rem(30);
         }
 
+        @media (max-width: rem(768)) {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: -100%;
+          background-color: #000;
+          flex-direction: column;
 
-        // left 
-        .left-block {
-            @include df-between;
-
-            // .logo_img-block {
-            .img_logo {
-                margin-right: rem(60);
-                animation-iteration-count: infinite;
-                cursor: pointer;
-
-                .logo_animation1 {
-                    animation: pulse;
-                    animation-duration: 2s;
-                    animation-iteration-count: infinite;
-                }
-
-                @media (max-width: rem(768)) {
-                    margin-right: rem(40);
-                }
-            }
-
-            // }
-            .menu {
-                transition: 500ms;
-                @include df-between;
-                gap: rem(40);
-
-                @media (max-width: rem(810)) {
-                    gap: rem(30);
-                }
-
-                @media (max-width: rem(768)) {
-                    position: fixed;
-                    top: 0;
-                    left: -100%;
-                    background-color: #000;
-                    flex-direction: column;
-                    gap: 0;
-                    width: 100%;
-                    height: 100vh;
-                    text-align: center;
-                    z-index: 1000;
-                }
-
-                .list {
-                    @media (max-width: rem(768)) {
-                    margin-top: 20px;
-                    }
-                }
-
-                .link {
-                    font-family: 'Oswald';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: rem(14);
-                    line-height: lh(26, 14);
-                    text-transform: uppercase;
-                    color: #000000;
-
-                    @media (max-width: rem(768)) {
-                        color: #fff;
-                        line-height: 0;
-                        font-size: 16px;
-                        margin: 16px 0;
-                    }
-                }
-            }
-
-            .menu.active {
-                left: 0;
-            }
+          gap: 0;
+          width: 100%;
+          //   height: 100vh;
+          text-align: center;
+          z-index: 1000;
         }
 
-        // right 
-        .right-block {
-            .btn {
-                width: 100%;
-                background: #0057FF;
-                border-radius: 30px;
-                font-family: 'Oswald';
-                font-style: normal;
-                font-weight: 400;
-                font-size: rem(14);
-                line-height: lh(24, 14);
-                text-align: center;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                padding: rem(14) rem(40);
-                cursor: pointer;
-
-                @media (max-width: rem(768)) {
-                    display: none;
-                    height: 100vh;
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    left: 0;
-                    z-index: 10;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    background: #000;
-                    transition: top 1s ease;
-                }
-
-                @media (max-width: rem(810)) {
-                    padding: rem(12) rem(32);
-                }
-            }
+        .list {
+          @media (max-width: rem(768)) {
+            margin-top: 20px;
+          }
         }
 
-        .humburger {
-            display: none;
+        .link {
+          font-family: "Oswald";
+          font-style: normal;
+          font-weight: 400;
+          font-size: rem(14);
+          line-height: lh(26, 14);
+          text-transform: uppercase;
+          color: #000000;
 
-            @media (max-width: rem(768)) {
-                display: block;
-                color: #000;
-                font-size: 2.2rem;
-                cursor: pointer;
-            }
+          @media (max-width: rem(768)) {
+            color: #fff;
+            line-height: 0;
+            font-size: 16px;
+            margin: 16px 0;
+          }
         }
+      }
 
+      .menu.active {
+        left: 0;
+      }
     }
+
+    // right
+    .right-block {
+      .btn {
+        width: 100%;
+        background: #0057ff;
+        border-radius: 30px;
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: lh(24, 14);
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: rem(14) rem(40);
+        cursor: pointer;
+
+        @media (max-width: rem(768)) {
+          display: none;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 10;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #000;
+          transition: top 1s ease;
+        }
+
+        @media (max-width: rem(810)) {
+          padding: rem(12) rem(32);
+        }
+      }
+    }
+
+    .humburger {
+      display: none;
+
+      @media (max-width: rem(768)) {
+        display: block;
+        color: #000;
+        font-size: 2.2rem;
+        cursor: pointer;
+      }
+    }
+  }
 }

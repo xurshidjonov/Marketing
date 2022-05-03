@@ -1,577 +1,807 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- FONTSAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- FONTS GOOGLE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ANIMATE CSS  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- W3SCHOOL  -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- SCROLL  -->
-    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="aos-by-red.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- SWIPER JS LINK  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
     <!-- Link to the file hosted on your server, -->
-    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
-
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css" />
 
     <!-- or link to the CDN -->
-    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
-</head>
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css" />
+  </head>
 
-<body>
+  <body>
     <!-- HEADER SECTION  -->
     <div class="header">
-        <div class="container">
-            <nav class="nav">
+      <div class="container">
+        <nav class="nav">
+          <div class="left-block">
+            <!-- LOGO  -->
+            <div id="logo" class="logo_img-block logo_animation1">
+              <img
+                class="img_logo animate__animated animate__pulse"
+                src="./images/logo.svg"
+                alt="There is logo"
+              />
+            </div>
 
-                <div class="left-block">
-                    <!-- LOGO  -->
-                    <div id="logo" class="logo_img-block logo_animation1 ">
-                        <img class="img_logo animate__animated animate__pulse" src="./images/logo.svg"
-                            alt="There is logo">
-                    </div>
+            <!-- MENU  -->
+            <ul class="menu">
+              <li class="list">
+                <a href="#home" class="link">Home</a>
+              </li>
+              <li class="list">
+                <a href="#about" class="link">About</a>
+              </li>
+              <li class="list">
+                <a href="#pricing" class="link">Pricing</a>
+              </li>
+              <li class="list">
+                <a href="#" class="link">Blog</a>
+              </li>
+              <li class="list">
+                <a href="#" class="link">Faq</a>
+              </li>
+              <li class="list">
+                <a href="#" class="link">Contact</a>
+              </li>
+            </ul>
+          </div>
 
-                    <!-- MENU  -->
-                    <ul class="menu">
-                        <li class="list">
-                            <a href="#home" class="link">Home</a>
-                        </li>
-                        <li class="list">
-                            <a href="#about" class="link">About</a>
-                        </li>
-                        <li class="list">
-                            <a href="#pricing" class="link">Pricing</a>
-                        </li>
-                        <li class="list">
-                            <a href="#" class="link">Blog</a>
-                        </li>
-                        <li class="list">
-                            <a href="#" class="link">Faq</a>
-                        </li>
-                        <li class="list">
-                            <a href="#" class="link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="right-block">
+            <button id="purchaseBtn" class="btn btn-animation">
+              Purchase template
+            </button>
+          </div>
 
-                <div class="right-block">
-                    <button id="purchaseBtn" class="btn btn-animation">Purchase template</button>
-                </div>
-
-                <div class="humburger">
-                    <!-- <i class="fa fa-times"></i> -->
-                    <i class="fa fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-
+          <div class="humburger">
+            <!-- <i class="fa fa-times"></i> -->
+            <i class="fa fa-bars"></i>
+          </div>
+        </nav>
+      </div>
     </div>
 
     <!-- HOME SECTION  -->
     <section id="home" class="home">
-        <div class="container container_main">
-            <!-- left -->
-            <div class="main-left">
-                <h1 class="suptitle animate__animated animate__fadeInDown">Digital Marketing. Creative Design.</h1>
-                <p class="text">"Your work is going to fill a large part of your life, and the only way to be truly
-                    satisfied is to do what you believe is great work. And the only way to do great work is to love what
-                    you do."</p>
-                <div class="wrapper">
-                    <div class="left-img-block">
-                        <img src="./images/main_green-girl.svg" alt="There is girl">
-                    </div>
-                    <div class="right-content">
-                        <h4 class="norton">Samantha Norton</h4>
-                        <div class="row_stars">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                        </div>
-                    </div>
-                </div>
-                <button class="getStartBtn btn-animation">Get started now</button>
+      <div class="container container_main">
+        <!-- left -->
+        <div class="main-left">
+          <h1 class="suptitle animate__animated animate__fadeInDown">
+            Digital Marketing. Creative Design.
+          </h1>
+          <p class="text">
+            "Your work is going to fill a large part of your life, and the only
+            way to be truly satisfied is to do what you believe is great work.
+            And the only way to do great work is to love what you do."
+          </p>
+          <div class="wrapper">
+            <div class="left-img-block">
+              <img src="./images/main_green-girl.svg" alt="There is girl" />
             </div>
-
-            <!-- rigth  -->
-            <div class="main-right">
-                <img src="./images/main_girl.svg" alt="there is a main girl" class="main_img">
+            <div class="right-content">
+              <h4 class="norton">Samantha Norton</h4>
+              <div class="row_stars">
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+              </div>
             </div>
+          </div>
+          <button class="getStartBtn btn-animation">Get started now</button>
         </div>
+
+        <!-- rigth  -->
+        <div class="main-right">
+          <img
+            src="./images/main_girl.svg"
+            alt="there is a main girl"
+            class="main_img"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- ABOUT SECTION  -->
     <section id="about" class="about" data-aos="zoom-in">
-        <div class="container">
-            <div class="wrapper " id="about">
-                <p class="about__event-tech">Event Technology</p>
-                <h2 class="about_header2">
-                    The solution that <br>
-                    your business can rely on
-                </h2>
-                <p class="about_parag">
-                    Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                    to do what you believe is great work. And the only way to do great work is to love what you do.
-                </p>
-                <div class="about_img-bl">
-                    <img src="./images/about__img.jpg" alt="" class="about_img">
-                </div>
-                <p class="about_last-parag">more about us</p>
-            </div>
+      <div class="container">
+        <div class="wrapper" id="about">
+          <p class="about__event-tech">Event Technology</p>
+          <h2 class="about_header2">
+            The solution that <br />
+            your business can rely on
+          </h2>
+          <p class="about_parag">
+            Your work is going to fill a large part of your life, and the only
+            way to be truly satisfied is to do what you believe is great work.
+            And the only way to do great work is to love what you do.
+          </p>
+          <div class="about_img-bl">
+            <img src="./images/about__img.jpg" alt="" class="about_img" />
+          </div>
+          <p class="about_last-parag">more about us</p>
         </div>
+      </div>
     </section>
 
     <!-- FORM SECTION  -->
     <section id="form" class="form">
-        <div class="container conatiner_form">
-            <!-- left  -->
-            <div class="left">
-                <h3 class="header">Experience design and intelligent marketing for growing brands</h3>
-                <p class="text">The first rule of any technology used in a business is that automation
-                    applied to an efficient operation will magnify the efficiency.</p>
-                <div class="wrapper">
-                    <div class="customer">
-                        <img src="./images/form_customer.svg" alt="">
-                        <h4 class="customer_header">Customer Support</h4>
-                        <p class="customer_text">Make every detail perfect & limit the number of details.</p>
-                    </div>
-                    <div class="email">
-                        <img src="./images/form_customer.svg" alt="">
-                        <h4 class="email_header">Customer Support</h4>
-                        <p class="email_text">Make every detail perfect & limit the number of details.</p>
-                    </div>
-                </div>
-                <button class=" btn-animation btn">
-                    Read more
-                </button>
+      <div class="container conatiner_form">
+        <!-- left  -->
+        <div class="left">
+          <h3 class="header">
+            Experience design and intelligent marketing for growing brands
+          </h3>
+          <p class="text">
+            The first rule of any technology used in a business is that
+            automation applied to an efficient operation will magnify the
+            efficiency.
+          </p>
+          <div class="wrapper">
+            <div class="customer">
+              <img src="./images/form_customer.svg" alt="" />
+              <h4 class="customer_header">Customer Support</h4>
+              <p class="customer_text">
+                Make every detail perfect & limit the number of details.
+              </p>
             </div>
+            <div class="email">
+              <img src="./images/form_customer.svg" alt="" />
+              <h4 class="email_header">Customer Support</h4>
+              <p class="email_text">
+                Make every detail perfect & limit the number of details.
+              </p>
+            </div>
+          </div>
+          <button class="btn-animation btn">Read more</button>
+        </div>
 
-            <!-- right  -->
-            <div class="form-right">
-                <div class="form-right_img-block">
-                    <img src="./images/form_right__img.svg" alt="" class="form-right_img">
-                </div>
-                <div class="wrap">
-                    <h3 class="form-right_header">
-                        Get in touch of the world
-                    </h3>
-                    <p class="form-right_text">Your work is going to fill a large part of your life, and the only way to
-                        be
-                        truly satisfied.</p>
+        <!-- right  -->
+        <div class="form-right">
+          <div class="form-right_img-block">
+            <img
+              src="./images/form_right__img.svg"
+              alt=""
+              class="form-right_img"
+            />
+          </div>
+          <div class="wrap">
+            <h3 class="form-right_header">Get in touch of the world</h3>
+            <p class="form-right_text">
+              Your work is going to fill a large part of your life, and the only
+              way to be truly satisfied.
+            </p>
 
-                    <div class="form">
-                        <label class="name_Email_wrapper" for="">
-                            <input class="name_input" type="text" placeholder="Enter your name">
-                            <input class="email_input" type="email" placeholder="Enter email">
-                        </label>
-                        <label class="subject_area_wrapper" for="">
-                            <input class="subject" type="text" placeholder="Enter your subject">
-                            <input class="textarea" type="text" placeholder="Enter your subject">
-                            <!-- <textarea class="textarea" name="" id="" cols="20" rows="2" placeholder="Enter your subject">
+            <div class="form">
+              <label class="name_Email_wrapper" for="">
+                <input
+                  class="name_input"
+                  type="text"
+                  placeholder="Enter your name"
+                />
+                <input
+                  class="email_input"
+                  type="email"
+                  placeholder="Enter email"
+                />
+              </label>
+              <label class="subject_area_wrapper" for="">
+                <input
+                  class="subject"
+                  type="text"
+                  placeholder="Enter your subject"
+                />
+                <input
+                  class="textarea"
+                  type="text"
+                  placeholder="Enter your subject"
+                />
+                <!-- <textarea class="textarea" name="" id="" cols="20" rows="2" placeholder="Enter your subject">
                            
                         </textarea> -->
-                        </label>
+              </label>
 
-                        <button type="submit" class="btn-animation form-right_btn">SENT MESSAGE</button>
+              <button type="submit" class="btn-animation form-right_btn">
+                SENT MESSAGE
+              </button>
 
-                        <img class="form_green-img" src="./images/form_grreen logo.svg" alt="there is a green image">
-
-                    </div>
-                </div>
+              <img
+                class="form_green-img"
+                src="./images/form_grreen logo.svg"
+                alt="there is a green image"
+              />
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- TRUST SECTION  -->
     <section id="trust" class="trust">
-        <div class="container trust-container">
-
-
-
-            <!-- left  -->
-            <div class="left">
-                <img src="./images/trust_image.svg" alt="trust image" class="left_img">
-            </div>
-            <div class="right">
-                <h3 class="trust_header">See why we are trusted the world over</h3>
-                <p class="trust_parag">The first rule of any technology used in a business is that automation
-                    applied to an efficient operation will magnify the efficiency.</p>
-
-                <div class="trust_wrapper wrap">
-
-                    <div class="wrap_list">
-                        <p class="wrap_text">Do you provide customer support?</p>
-                        <img class="wrap_img" src="./images/trust-wrap__plus.svg" alt="#">
-                    </div>
-                    <div class="wrap_list">
-                        <p class="wrap_text">How much traffic can the hosting handle?</p>
-                        <img class="wrap_img" src="./images/trust-wrap__plus.svg" alt="#">
-                    </div>
-                    <div class="wrap_list">
-                        <p class="wrap_text">Do you have any questions for us?</p>
-                        <img class="wrap_img" src="./images/trust-wrap__plus.svg" alt="#">
-                    </div>
-                    <div class="wrap_list">
-                        <p class="wrap_text">What is your return policy?</p>
-                        <img class="wrap_img" src="./images/trust-wrap__plus.svg" alt="#">
-                    </div>
-                </div>
-            </div>
+      <div class="container trust-container">
+        <!-- left  -->
+        <div class="left">
+          <img
+            src="./images/trust_image.svg"
+            alt="trust image"
+            class="left_img"
+          />
         </div>
+        <div class="right">
+          <h3 class="trust_header">See why we are trusted the world over</h3>
+          <p class="trust_parag">
+            The first rule of any technology used in a business is that
+            automation applied to an efficient operation will magnify the
+            efficiency.
+          </p>
+
+          <div class="trust_wrapper wrap">
+            <div class="wrap_list">
+              <p class="wrap_text">Do you provide customer support?</p>
+              <img
+                class="wrap_img"
+                src="./images/trust-wrap__plus.svg"
+                alt="#"
+              />
+            </div>
+            <div class="wrap_list">
+              <p class="wrap_text">How much traffic can the hosting handle?</p>
+              <img
+                class="wrap_img"
+                src="./images/trust-wrap__plus.svg"
+                alt="#"
+              />
+            </div>
+            <div class="wrap_list">
+              <p class="wrap_text">Do you have any questions for us?</p>
+              <img
+                class="wrap_img"
+                src="./images/trust-wrap__plus.svg"
+                alt="#"
+              />
+            </div>
+            <div class="wrap_list">
+              <p class="wrap_text">What is your return policy?</p>
+              <img
+                class="wrap_img"
+                src="./images/trust-wrap__plus.svg"
+                alt="#"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- MARKETING SECTION  -->
     <section id="pricing" class="mark">
-        <div class="container mark_container">
-            <!-- left  -->
-            <div class="left">
-                <h3 class="mark_head">
-                    Marketing and digital products that grow businesses!
-                </h3>
+      <div class="container mark_container">
+        <!-- left  -->
+        <div class="left">
+          <h3 class="mark_head">
+            Marketing and digital products that grow businesses!
+          </h3>
 
-                <p class="mark_text">
-                    The first rule of any technology used in a business is that automation applied to an efficient
-                    operation will magnify the efficiency.
-                </p>
+          <p class="mark_text">
+            The first rule of any technology used in a business is that
+            automation applied to an efficient operation will magnify the
+            efficiency.
+          </p>
 
-                <div class="wrap">
-                    <div class="research">
-                        <div class="res_row">
-                            <p class="res">Research</p>
-                            <p class="res_percent">85%</p>
-                        </div>
-                        <!-- <div class="prog_bar"></div> -->
-                        <div class="w3-light-grey w3-round">
-                            <div class="w3-container w3-round w3-blue" style="width:85%; height: 4px;"></div>
-                        </div>
-                    </div>
-                    <div class="research">
-                        <div class="res_row">
-                            <p class="res">Education</p>
-                            <p class="res_percent">65%</p>
-                        </div>
-                        <div class="w3-light-grey w3-round">
-                            <div class="w3-container w3-round w3-purple" style="width:65%; height: 4px;"></div>
-                        </div>
-                    </div>
-                    <div class="research">
-                        <div class="res_row">
-                            <p class="res">Strategy Development</p>
-                            <p class="res_percent"> 72%</p>
-                        </div>
-                        <div class="w3-light-grey w3-round">
-                            <div class="w3-container w3-round w3-orange" style="width:72%; height: 4px;"></div>
-                        </div>
-                    </div>
-                </div>
+          <div class="wrap">
+            <div class="research">
+              <div class="res_row">
+                <p class="res">Research</p>
+                <p class="res_percent">85%</p>
+              </div>
+              <!-- <div class="prog_bar"></div> -->
+              <div class="w3-light-grey w3-round">
+                <div
+                  class="w3-container w3-round w3-blue"
+                  style="width: 85%; height: 4px"
+                ></div>
+              </div>
             </div>
-
-            <!-- right  -->
-            <div class="right">
-                <div class="wrap_img">
-                    <img class="image" src="./images/marketing_right.svg" alt="">
-                </div>
-                <div class="wrap_text">
-                    <h3 class="header">
-                        $45.00
-                    </h3>
-                    <p class="suptitle">Per month</p>
-
-                    <div class="row">
-                        <p class="row_text">Meet and Greet with Speakers</p>
-                        <p class="row_text">Video Facilities</p>
-                        <p class="row_text">Speaker Facilities</p>
-                        <p class="row_text">Questions & Answers</p>
-                        <p class="row_text">Questions & Answers</p>
-                        <p class="row_text">Dedicated account manager</p>
-                    </div>
-
-                    <div class="btn-block">
-                        <button class="btn-animation right_btn">
-                            Get Ticket
-                        </button>
-                    </div>
-                </div>
+            <div class="research">
+              <div class="res_row">
+                <p class="res">Education</p>
+                <p class="res_percent">65%</p>
+              </div>
+              <div class="w3-light-grey w3-round">
+                <div
+                  class="w3-container w3-round w3-purple"
+                  style="width: 65%; height: 4px"
+                ></div>
+              </div>
             </div>
+            <div class="research">
+              <div class="res_row">
+                <p class="res">Strategy Development</p>
+                <p class="res_percent">72%</p>
+              </div>
+              <div class="w3-light-grey w3-round">
+                <div
+                  class="w3-container w3-round w3-orange"
+                  style="width: 72%; height: 4px"
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
+        <!-- right  -->
+        <div class="right">
+          <div class="wrap_img">
+            <img class="image" src="./images/marketing_right.svg" alt="" />
+          </div>
+          <div class="wrap_text">
+            <h3 class="header">$45.00</h3>
+            <p class="suptitle">Per month</p>
+
+            <div class="row">
+              <p class="row_text">Meet and Greet with Speakers</p>
+              <p class="row_text">Video Facilities</p>
+              <p class="row_text">Speaker Facilities</p>
+              <p class="row_text">Questions & Answers</p>
+              <p class="row_text">Questions & Answers</p>
+              <p class="row_text">Dedicated account manager</p>
+            </div>
+
+            <div class="btn-block">
+              <button class="btn-animation right_btn">Get Ticket</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- MENTOR SECTION  -->
     <section class="mentor">
-        <div class="container m-container">
-
-            <div class="main swiper mySwiper">
-                <div class="wrapper swiper-wrapper">
-                    <!-- card  -->
-                    <div class="card swiper-slide">
-                        <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                            enim in
-                            eros elementum tristique. "</p>
-                        <div class="img-b">
-                            <img src="./images/mentor_img1.svg" alt="" class="img">
-                        </div>
-                        <h4 class="m_name">
-                            Martin Eduard
-                        </h4>
-                        <p class="m_postion">CEO of Marketing</p>
-                        <div class="row_stars">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                        </div>
-                    </div>
-                    <!-- card  -->
-                    <div class="card swiper-slide">
-                        <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                            enim in
-                            eros elementum tristique. "</p>
-                        <div class="img-b">
-                            <img src="./images/mentor_img2.svg" alt="" class="img">
-                        </div>
-                        <h4 class="m_name">
-                            Martin Eduard
-                        </h4>
-                        <p class="m_postion">CEO of Marketing</p>
-                        <div class="row_stars">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                        </div>
-                    </div>
-                    <!-- card  -->
-                    <div class="card swiper-slide">
-                        <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                            enim in
-                            eros elementum tristique. "</p>
-                        <div class="img-b">
-                            <img src="./images/mentor_img3.svg" alt="" class="img">
-                        </div>
-                        <h4 class="m_name">
-                            Martin Eduard
-                        </h4>
-                        <p class="m_postion">CEO of Marketing</p>
-                        <div class="row_stars">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                        </div>
-                    </div>
-                    <!-- card  -->
-                    <div class="card swiper-slide">
-                        <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                            enim in
-                            eros elementum tristique. "</p>
-                        <div class="img-b">
-                            <img src="./images/mentor_img3.svg" alt="" class="img">
-                        </div>
-                        <h4 class="m_name">
-                            Martin Eduard
-                        </h4>
-                        <p class="m_postion">CEO of Marketing</p>
-                        <div class="row_stars">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                        </div>
-                    </div>
-                    <!-- card  -->
-                    <div class="card swiper-slide">
-                        <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                            enim in
-                            eros elementum tristique. "</p>
-                        <div class="img-b">
-                            <img src="./images/mentor_img3.svg" alt="" class="img">
-                        </div>
-                        <h4 class="m_name">
-                            Martin Eduard
-                        </h4>
-                        <p class="m_postion">CEO of Marketing</p>
-                        <div class="row_stars">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                        </div>
-                    </div>
-                    <!-- card  -->
-                    <div class="card swiper-slide">
-                        <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                            enim in
-                            eros elementum tristique. "</p>
-                        <div class="img-b">
-                            <img src="./images/mentor_img3.svg" alt="" class="img">
-                        </div>
-                        <h4 class="m_name">
-                            Martin Eduard
-                        </h4>
-                        <p class="m_postion">CEO of Marketing</p>
-                        <div class="row_stars">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                            <img src="./images/main_star.svg" alt="There is a yellow star" class="star_img">
-                        </div>
-                    </div>
-                </div>
-                <div class="circle swiper-pagination"></div>
+      <div class="container m-container">
+        <div class="main swiper mySwiper">
+          <div class="wrapper swiper-wrapper">
+            <!-- card  -->
+            <div class="card swiper-slide">
+              <p class="text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. "
+              </p>
+              <div class="img-b">
+                <img src="./images/mentor_img1.svg" alt="" class="img" />
+              </div>
+              <h4 class="m_name">Martin Eduard</h4>
+              <p class="m_postion">CEO of Marketing</p>
+              <div class="row_stars">
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+              </div>
             </div>
-
-            <!-- UNIQ BLOCK  -->
-            <div class="uniq">
-                <h4 class="uniq_h">an unique marketing template</h4>
-                <p class="uniq_t">"Any strategy that gets a message to rise above the clutter is terrific from the
-                    advertiser's perspective. Even if it's not much of a secret, it's still a pretty good marketing
-                    idea."</p>
-                <div class="btn-b">
-                    <button class="uniq_btn btn-animation">Meet the team</button>
-                </div>
+            <!-- card  -->
+            <div class="card swiper-slide">
+              <p class="text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. "
+              </p>
+              <div class="img-b">
+                <img src="./images/mentor_img2.svg" alt="" class="img" />
+              </div>
+              <h4 class="m_name">Martin Eduard</h4>
+              <p class="m_postion">CEO of Marketing</p>
+              <div class="row_stars">
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+              </div>
             </div>
-
-            <!-- BRANDS  -->
-
-            <div class="brands splide__slide ">
-                <img src="./images/brands/codeflame.svg" alt="">
-                <img src="./images/brands/matLab.svg" alt="">
-                <img src="./images/brands/oprah.svg" alt="">
-                <img src="./images/brands/sordic.svg" alt="">
-                <img src="./images/brands/togather.svg" alt="">
-                <img src="./images/brands/viodus.svg" alt="">
+            <!-- card  -->
+            <div class="card swiper-slide">
+              <p class="text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. "
+              </p>
+              <div class="img-b">
+                <img src="./images/mentor_img3.svg" alt="" class="img" />
+              </div>
+              <h4 class="m_name">Martin Eduard</h4>
+              <p class="m_postion">CEO of Marketing</p>
+              <div class="row_stars">
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+              </div>
             </div>
-
+            <!-- card  -->
+            <div class="card swiper-slide">
+              <p class="text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. "
+              </p>
+              <div class="img-b">
+                <img src="./images/mentor_img3.svg" alt="" class="img" />
+              </div>
+              <h4 class="m_name">Martin Eduard</h4>
+              <p class="m_postion">CEO of Marketing</p>
+              <div class="row_stars">
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+              </div>
+            </div>
+            <!-- card  -->
+            <div class="card swiper-slide">
+              <p class="text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. "
+              </p>
+              <div class="img-b">
+                <img src="./images/mentor_img3.svg" alt="" class="img" />
+              </div>
+              <h4 class="m_name">Martin Eduard</h4>
+              <p class="m_postion">CEO of Marketing</p>
+              <div class="row_stars">
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+              </div>
+            </div>
+            <!-- card  -->
+            <div class="card swiper-slide">
+              <p class="text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. "
+              </p>
+              <div class="img-b">
+                <img src="./images/mentor_img3.svg" alt="" class="img" />
+              </div>
+              <h4 class="m_name">Martin Eduard</h4>
+              <p class="m_postion">CEO of Marketing</p>
+              <div class="row_stars">
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+                <img
+                  src="./images/main_star.svg"
+                  alt="There is a yellow star"
+                  class="star_img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="circle swiper-pagination"></div>
         </div>
-    </section>
 
+        <!-- UNIQ BLOCK  -->
+        <div class="uniq">
+          <h4 class="uniq_h">an unique marketing template</h4>
+          <p class="uniq_t">
+            "Any strategy that gets a message to rise above the clutter is
+            terrific from the advertiser's perspective. Even if it's not much of
+            a secret, it's still a pretty good marketing idea."
+          </p>
+          <div class="btn-b">
+            <button class="uniq_btn btn-animation">Meet the team</button>
+          </div>
+        </div>
+
+        <!-- BRANDS  -->
+
+        <div class="brands splide__slide">
+          <img src="./images/brands/codeflame.svg" alt="" />
+          <img src="./images/brands/matLab.svg" alt="" />
+          <img src="./images/brands/oprah.svg" alt="" />
+          <img src="./images/brands/sordic.svg" alt="" />
+          <img src="./images/brands/togather.svg" alt="" />
+          <img src="./images/brands/viodus.svg" alt="" />
+        </div>
+      </div>
+    </section>
 
     <!-- NEWS SECTION -->
     <section class="news">
-        <div class="container n-container">
-            <div class="header_n">
-                <p class="suptitle">FROM OUR BLOG</p>
-                <h3 class="title">Recent News & Updates</h3>
-            </div>
-            <div class="blogs">
-                <div class="left">
-                    <div class="top">
-                        <div class="img_bl">
-                            <img src="./images/blog_design.svg" alt="" class="design_img">
-                        </div>
-                        <div class="content">
-                            <p class="top_title">DESIGN</p>
-                            <h4 class="main_title">Best Blogs To Follow About Web Design</h4>
-
-                            <p class="text">Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint.</p>
-                        </div>
-                    </div>
-                    <div class="top">
-                        <div class="img_bl">
-                            <img src="./images/blog_tutorial.svg" alt="" class="design_img">
-                        </div>
-                        <div class="content">
-                            <p class="top_title">TUTORIAL</p>
-                            <h4 class="main_title">5 Great Web Design Resources</h4>
-
-                            <p class="text">Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <p class="right_subtitle">
-                        MARKETING
-                    </p>
-                    <h2 class="title">What Will Website Be Like In 100 Years?</h2>
-
-                </div>
-            </div>
+      <div class="container n-container">
+        <div class="header_n">
+          <p class="suptitle">FROM OUR BLOG</p>
+          <h3 class="title">Recent News & Updates</h3>
         </div>
+        <div class="blogs">
+          <div class="left">
+            <div class="top">
+              <div class="img_bl">
+                <img src="./images/blog_design.svg" alt="" class="design_img" />
+              </div>
+              <div class="content">
+                <p class="top_title">DESIGN</p>
+                <h4 class="main_title">
+                  Best Blogs To Follow About Web Design
+                </h4>
+
+                <p class="text">
+                  Et magni et ea unde tempore. Corrupti quia adipisci qui dicta
+                  sint.
+                </p>
+              </div>
+            </div>
+            <div class="top">
+              <div class="img_bl">
+                <img
+                  src="./images/blog_tutorial.svg"
+                  alt=""
+                  class="design_img"
+                />
+              </div>
+              <div class="content">
+                <p class="top_title">TUTORIAL</p>
+                <h4 class="main_title">5 Great Web Design Resources</h4>
+
+                <p class="text">
+                  Et magni et ea unde tempore. Corrupti quia adipisci qui dicta
+                  sint.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <p class="right_subtitle">MARKETING</p>
+            <h2 class="title">What Will Website Be Like In 100 Years?</h2>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER  -->
     <footer class="footer">
-        <div class="leftside">
-            <img class="img" src="./images/logo.svg" alt="">
-            <p class="text"><span class="innertext">Created with love by </span>Khurshid Bo'riyev</p>
-        </div>
-        <div class="rightside">
-            <ul class="menu">
-                <li class="list">
-                    <a href="$" class="link">Style-guide</a>
-                </li>
-                <li class="list">
-                    <a href="$" class="link">Licenses</a>
-                </li>
-                <li class="list">
-                    <a href="$" class="link">Changelog</a>
-                </li>
-                <li class="list">
-                    <a href="$" class="link">Terms</a>
-                </li>
-                <li class="list">
-                    <a href="$" class="link">Password</a>
-                </li>
-                <li class="list">
-                    <a href="$" class="link">404</a>
-                </li>
-            </ul>
+      <div class="leftside">
+        <img class="img" src="./images/logo.svg" alt="" />
+        <p class="text">
+          <span class="innertext">Created with love by </span>Khurshid Bo'riyev
+        </p>
+      </div>
+      <div class="rightside">
+        <ul class="menu">
+          <li class="list">
+            <a href="$" class="link">Style-guide</a>
+          </li>
+          <li class="list">
+            <a href="$" class="link">Licenses</a>
+          </li>
+          <li class="list">
+            <a href="$" class="link">Changelog</a>
+          </li>
+          <li class="list">
+            <a href="$" class="link">Terms</a>
+          </li>
+          <li class="list">
+            <a href="$" class="link">Password</a>
+          </li>
+          <li class="list">
+            <a href="$" class="link">404</a>
+          </li>
+        </ul>
 
-            <div class="soc_media">
-                <a href="#" class="link"><img src="./images/footer_facebook.svg" alt=""></a>
-                <a href="#" class="link"><img src="./images/footer_twiitter.svg" alt=""></a>
-                <a href="#" class="link"><img src="./images/footer_v.svg" alt=""></a>
-                <a href="#" class="link"><img src="./images/footer_p.svg" alt=""></a>
-            </div>
+        <div class="soc_media">
+          <a href="#" class="link"
+            ><img src="./images/footer_facebook.svg" alt=""
+          /></a>
+          <a href="#" class="link"
+            ><img src="./images/footer_twiitter.svg" alt=""
+          /></a>
+          <a href="#" class="link"
+            ><img src="./images/footer_v.svg" alt=""
+          /></a>
+          <a href="#" class="link"
+            ><img src="./images/footer_p.svg" alt=""
+          /></a>
         </div>
+      </div>
     </footer>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 3000,
-            // once: true,
-        });
+      AOS.init({
+        duration: 3000,
+        // once: true,
+      });
     </script>
     <script src="path-to-the-file/splide.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
-</body>
-
+  </body>
 </html>

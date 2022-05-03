@@ -1,16 +1,15 @@
-const btns = document.querySelectorAll('.btn-animation');
+const btns = document.querySelectorAll(".btn-animation");
 
 btns.forEach((everyBtn) => {
-  everyBtn.classList.remove('animate__animated', 'animate__rubberBand');
+  everyBtn.classList.remove("animate__animated", "animate__rubberBand");
   everyBtn.addEventListener("click", () => {
-    everyBtn.classList.add('animate__animated', 'animate__rubberBand');
+    everyBtn.classList.add("animate__animated", "animate__rubberBand");
 
     setTimeout(() => {
-      everyBtn.classList.remove('animate__animated', 'animate__rubberBand');
-    }, 1000)
-  })
+      everyBtn.classList.remove("animate__animated", "animate__rubberBand");
+    }, 1000);
+  });
 });
-
 
 function reveal() {
   let reveals = document.querySelectorAll(".scroll_element");
@@ -30,9 +29,7 @@ function reveal() {
 }
 document.addEventListener("scroll", reveal);
 
-
-
-// EFFECT OVERFLOW 
+// EFFECT OVERFLOW
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -50,15 +47,16 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-const humburger = document.querySelector('.humburger');
-const menu = document.querySelector('.menu');
+const humburger = document.querySelector(".humburger");
+const menu = document.querySelector(".menu");
 
 humburger.addEventListener("click", () => {
-  document.body.style.overflow = "hidden";
   humburger.classList.toggle("active");
   menu.classList.toggle("active");
-})
+});
 
+const scrollBtn = document.getElementById("scrollBtn");
 
-
+scrollBtn.addEventListener("click", () => {
+  document.getElementsByTagName("html")[0].style.overflow = "hidden";
+});
